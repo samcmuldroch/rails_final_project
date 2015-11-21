@@ -30,7 +30,7 @@ Admin
   has groups 
   
 Features:
-	Users can log in 
+	Users can create accounts and log in 
 	Users and admin can make reminders
 	Admin can make groups
 	Admin can add users to groups
