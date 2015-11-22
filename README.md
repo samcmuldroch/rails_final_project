@@ -13,7 +13,7 @@ Idea: An application where administrators monitor the group and sends birthday m
 Models and Description:
 
 User
-has many Users aka friends
+	has many Users aka friends
 	has many Reminders
 	has favorite animal (security question when making account)
 	
@@ -30,10 +30,14 @@ Admin
   has groups 
   
 Features:
-tbd
+	Users can create accounts and log in 
+	Users and admin can make reminders
+	Admin can make groups
+	Admin can add users to groups
+	Users can sign up to be part of a group
 
 Division of Labor:
-Syndey: 
-Vincent: 
-Kathy: 
-Martha: 
+	Sydney: 
+	Vincent: 
+	Kathy: 
+	Martha: 
