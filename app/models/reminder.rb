@@ -1,4 +1,4 @@
 class Reminder < ActiveRecord::Base
   belongs_to :user
-  validates :text, presence :true
+  validates :text, presence: true
 end
