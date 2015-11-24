@@ -4,6 +4,6 @@
 </p>
 User Name: <%= user.name %>
 <br>
-<%= button_to "Send Group Email!", email_path(id: @group.id, name: @group.name), :class => "button small", :method => :patch %>
 <% end %>
 </p>
+<%= button_to "Send Group Email!", email_path(id: @group.id, name: @group.name), :class => "button small", :method => :patch %>
