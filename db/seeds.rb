@@ -20,6 +20,6 @@
 
   # etc
   Group.create(name: group) 
-  User.create(:name => name, :email => email, :animal => animal, :birthday => birthday, :password => "asdfasdf", group_id => id)
+  User.create(:name => name, :email => email, :animal => animal, :birthday => birthday, :password => "asdfasdf", :group_id => id)
   Reminder.create(text: text, time: time)
 end 
