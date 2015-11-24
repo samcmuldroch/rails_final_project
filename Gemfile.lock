@@ -89,6 +89,8 @@ GEM
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    pony (1.11)
+      mail (>= 2.0)
     postgresql (1.0.0)
       pg
     rack (1.6.4)
@@ -170,6 +172,7 @@ DEPENDENCIES
   faker (= 1.4.2)
   jbuilder (~> 2.0)
   jquery-rails
+  pony
   postgresql
   rails (= 4.2.0)
   sass-rails (~> 5.0)
