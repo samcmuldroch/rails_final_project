@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   resources :groups
   patch '/email', to: 'groups#email'
 
-         
+  patch 'new_reminder', to: 'reminders#new'
+  get 'new_reminder', to: 'reminders#new'
+  resources :reminder
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
