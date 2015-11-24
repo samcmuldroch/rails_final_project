@@ -24,3 +24,4 @@
 
   Reminder.create(text:text, time:time)
 end 
+
