@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 3.times do |n|
   name  = Faker::Name.name
-  group = Faker:Company.name
+  group = Faker::Company.name
   email = name.gsub(/\s/,'_') + "@example.com"  # < same issue with name
   animal_list =["kangaroo", "greyhound", "cat", "fish", "bird", "dolphin"]
-  animal = animal_list[rand(animalU_list.size)]
+  animal = animal_list[rand(animal_list.size)]
   reminder_list = ["birthday, exam, holiday, vacation, project"]
   text = reminder_list[rand(reminder_list.size)]
   time = Faker::Time.forward(30, :all)
