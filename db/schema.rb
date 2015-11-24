@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124041229) do
+ActiveRecord::Schema.define(version: 20151124053019) do
 
   create_table "groups", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -29,11 +29,14 @@ ActiveRecord::Schema.define(version: 20151124041229) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "birthday"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "animal"
     t.string   "email"
     t.integer  "group_id"
+    t.string   "encrypted_password"
+    t.string   "reset_password_token"
+    t.time     "reset_password_sent_at"
   end
 
 end

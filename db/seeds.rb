@@ -18,9 +18,6 @@
 
   # etc
   Group.create(name: group) 
-
-  User.create(name: name)
-  User.create(name: name, email: email, animal: animal, birthday: birthday)
-
+  User.create(:name => name, :email => email, :animal => animal, :birthday => birthday, :password => "asdfasdf")
   Reminder.create(text: text, time: time)
 end 
