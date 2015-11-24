@@ -2,8 +2,10 @@ Rails.application.routes.draw do
 
 
   root to: 'home#index'
-  devise_for :users
-  resources :users
+  devise_for :user
+  resources :user
+  devise_for :groups
+  resources :groups
 
   patch 'new_reminder', to: 'reminders#new'
   get 'new_reminder', to: 'reminders#new'
