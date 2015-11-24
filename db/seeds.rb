@@ -11,7 +11,7 @@
   email = name.gsub(/\s/,'_') + "@example.com"  # < same issue with name
   animal_list =["kangaroo", "greyhound", "cat", "fish", "bird", "dolphin"]
   animal = animal_list[rand(animal_list.size)]
-  reminder_list = ["birthday, exam, holiday, vacation, project"]
+  reminder_list = ["birthday", "exam", "holiday", "vacation", "project"]
   text = reminder_list[rand(reminder_list.size)]
   time = Faker::Time.forward(30, :all)
   birthday = Faker::Date.backward(9125)
@@ -19,8 +19,8 @@
   # etc
   Group.create(name: group) 
 
+  User.create(name: name)
+  User.create(name: name, email: email, animal: animal, birthday: birthday)
 
-  User.create(name: name, email: email, animal: animal, birthday:birthday)
-
-  Reminder.create(text:text, time:time)
+  Reminder.create(text: text, time: time)
 end 
