@@ -11,5 +11,6 @@
 
   # etc
   Group.create(name: name)
-  User.create(name: name, email: name)
+  User.create(name: name, email: name, birthday: name, animal: name)
+  Reminder.create(text: name, time: name)
 end
