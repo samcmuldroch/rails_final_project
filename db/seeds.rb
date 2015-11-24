@@ -11,4 +11,5 @@
 
   # etc
   Group.create(name: name)
+  User.create(name: name, email: name)
 end
