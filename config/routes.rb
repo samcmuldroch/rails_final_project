@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root to: 'home#index'
   devise_for :users
   resources :users
+  devise_for :groups
+  resources :groups
+  patch '/email', to: 'groups#email'
 
          
   # The priority is based upon order of creation: first created -> highest priority.

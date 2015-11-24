@@ -1,0 +1,9 @@
+<h3>Group</h3>
+<p><b>Group Name:</b> <%= @group.name if @group.name %></p>
+<p><b>Users:</b> <% User.where(group_id: @group).each do |user| %>
+</p>
+User Name: <%= user.name %>
+<br>
+<%= button_to "Send Group Email!", email_path(id: @group.id, name: @group.name), :class => "button small", :method => :patch %>
+<% end %>
+</p>
