@@ -12,6 +12,8 @@
   animal_list =["kangaroo", "greyhound", "cat", "fish", "bird", "dolphin"]
   animal = animal_list[rand(animal_list.size)]
   reminder_list = ["birthday", "exam", "holiday", "vacation", "project"]
+  group_id = [1,2,3,4,5]
+  id = group_id[rand(group_id.size)]
   text = reminder_list[rand(reminder_list.size)]
   time = Faker::Time.forward(30, :all)
   birthday = Faker::Date.backward(9125)
