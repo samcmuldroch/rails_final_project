@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'new_reminder', to: 'reminders#new'
   resources :reminder
 
+  patch 'join_group', to: 'groups#join_group'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

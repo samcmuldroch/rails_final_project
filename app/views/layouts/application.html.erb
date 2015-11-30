@@ -17,9 +17,11 @@
 <body>
 	<header>
       <%= render 'layouts/navigation' %>
-    </header>
-
-<%= yield %>
+  </header>
+  <% flash.each do |message_type, message| %>
+    <div class="alert altert-<%= message_type %>"><%= message %></div>
+  <% end %> 
+  <%= yield %>
 
 </body>
 </html>

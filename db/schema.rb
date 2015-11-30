@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128072301) do
+ActiveRecord::Schema.define(version: 20151130071554) do
 
   create_table "groups", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "name"
     t.integer  "users_id"
+    t.integer  "user_id"
   end
 
+  add_index "groups", ["user_id"], name: "index_groups_on_user_id"
   add_index "groups", ["users_id"], name: "index_groups_on_users_id"
 
   create_table "reminders", force: :cascade do |t|
@@ -43,9 +45,12 @@ ActiveRecord::Schema.define(version: 20151128072301) do
     t.string   "name"
     t.datetime "birthday"
     t.string   "animal"
+    t.integer  "groups_id"
+    t.integer  "group_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["group_id"], name: "index_users_on_group_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end

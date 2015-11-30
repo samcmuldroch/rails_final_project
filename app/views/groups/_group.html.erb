@@ -1,1 +1,4 @@
-<td><%= link_to group.name, group %></td>
+<td>
+<%= link_to group.name, group %> | 
+<%= link_to "Join", join_group_path(id: group.id), method: :patch, class: "btn btn-sm btn-primary" %>
+</td>
