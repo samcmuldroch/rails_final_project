@@ -17,12 +17,10 @@ ActiveRecord::Schema.define(version: 20151130071554) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "name"
-    t.integer  "users_id"
     t.integer  "user_id"
   end
 
   add_index "groups", ["user_id"], name: "index_groups_on_user_id"
-  add_index "groups", ["users_id"], name: "index_groups_on_users_id"
 
   create_table "reminders", force: :cascade do |t|
     t.string   "text"
