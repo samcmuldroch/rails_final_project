@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :group
   has_many :groups
+  has_many :reminders
   validates :name, presence: true
 
 end
