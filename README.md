@@ -37,7 +37,11 @@ Features:
 	Users can sign up to be part of a group
 
 Division of Labor:
-	Sydney: 
+	Sydney:
+	
 	Vincent: 
+	
 	Kathy: 
-	Martha: 
+	
+	Martha: Seeds, implemented join group, created a form for new reminders, helped with homepage format, modeling relationship 
+	between reminder and users and groups 
