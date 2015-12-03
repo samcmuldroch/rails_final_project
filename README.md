@@ -15,7 +15,7 @@ Models and Description:
 User
 	has many Users aka friends
 	has many Reminders
-	has favorite animal (security question when making account)
+	has favorite greyhound (security question when making account)
 	
 Reminder 
 	has a memo
@@ -37,11 +37,12 @@ Features:
 	Users can sign up to be part of a group
 
 Division of Labor:
+
 	Sydney: Heuroko deplyment, model relationships, 
 	
 	Vincent: Implemeted ActionMailer Gem, Implementation of Seeds and faker gem, sending email to an entire group
 	
-	Kathy: Sign Up, HTML/CSS formatting, Displaying groups 
+	Kathy: Sign Up and Log In, HTML/CSS formatting, Displaying groups 
 	
 	Martha: methods for seeds, implemented join group, created a form for new reminders, helped with homepage format, modeling relationship 
 	between reminder and users and groups 
