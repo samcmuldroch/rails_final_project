@@ -5,17 +5,10 @@
 		</div>
 		<div>
 		    <ul class="nav navbar-nav navbar-left">
-<<<<<<< HEAD
-		    	<!--<li class = "active"><a href="#">Home</a></li>
-=======
 		    	<li><%= link_to "Home", root_url %></li>
 		    	<% if user_signed_in? %>
 					<li><%= link_to "New Reminder", new_reminder_path %></li>
 				<% end %>
->>>>>>> 4a0325fdc87125a5a22b9cf8518104767bf5a3c4
-				<li><a target="_blank" href = "http://google.com"> Google </a></li>
-				<li><a target="_blank" href = "http://neopets.com"> Neopets</a></li>-->
-				<li><%= link_to "Home", root_path %></li>
 				<li><a target="_blank" href = "https://instagram.com/zeldathegreyhound"> Zelda the Greyhound</a></li>
 				<li class="dropdown">
           			<a class="dropdown-toggle" data-toggle="dropdown" href="#">My Groups
@@ -34,7 +27,6 @@
 			<% else %>
 				<li><%= link_to("Log Out", destroy_user_session_path, :method => :delete) %></li> 
 			<% end %>
-				<!--<li><a href="#">Sign Up</a></li>-->
 			</ul>
 		</div>
 
