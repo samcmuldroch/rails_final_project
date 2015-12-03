@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151130071554) do
+ActiveRecord::Schema.define(version: 20151201074547) do
 
   create_table "groups", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -24,10 +24,15 @@ ActiveRecord::Schema.define(version: 20151130071554) do
 
   create_table "reminders", force: :cascade do |t|
     t.string   "text"
-    t.string   "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "time"
+    t.string   "location"
+    t.string   "category"
+    t.integer  "user_id"
   end
+
+  add_index "reminders", ["user_id"], name: "index_reminders_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -45,10 +50,12 @@ ActiveRecord::Schema.define(version: 20151130071554) do
     t.string   "animal"
     t.integer  "groups_id"
     t.integer  "group_id"
+    t.integer  "reminder_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["group_id"], name: "index_users_on_group_id"
+  add_index "users", ["reminder_id"], name: "index_users_on_reminder_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
