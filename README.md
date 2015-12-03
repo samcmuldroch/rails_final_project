@@ -40,7 +40,7 @@ Features:
 
 Division of Labor:
 
-	Sydney: Heuroko deplyment, model relationships, 
+	Sydney: Heuroko deployment, model relationships, initial email development, added data displays to various web pages, helped other debug
 	
 	Vincent: Implemeted ActionMailer Gem, Implementation of Seeds and faker gem, sending email to an entire group
 	
