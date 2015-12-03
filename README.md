@@ -13,30 +13,30 @@ Idea: An application where administrators monitor the group and sends birthday m
 Models and Description:
 
 User
-	has many Users aka friends
-	has many Reminders
-	has favorite greyhound (security question when making account)
+  - has many Users aka friends
+  - has many Reminders
+  - has favorite greyhound (security question when making account)
 	
 Reminder 
-	has a memo
-	has a time
-	belongs to user 
+  - has a memo
+  - has a time
+  - belongs to user 
 	
 Group 
-	has many Users
-	has an Admin 
+  - has many Users
+  - has an Admin 
 	
 Admin
- 
+
   - has groups 
   
 Features:
 	
-	- Users can create accounts and log in 
-	- Users and admin can make reminders
-	- Admin can make groups
-	- Admin can add users to groups
-	- Users can sign up to be part of a group
+  - Users can create accounts and log in 
+  - Users and admin can make reminders
+  - Admin can make groups
+  - Admin can add users to groups
+  - Users can sign up to be part of a group
 
 Division of Labor:
 
