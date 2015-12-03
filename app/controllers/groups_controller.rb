@@ -36,6 +36,7 @@ class GroupsController < ApplicationController
             "thirst" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5UkFfVWxVMTRMVEE/view?usp=sharing",
             "lazy" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5dnVYNlhvQ0Ytb2s/view?usp=sharing"}
 
+
     @group.users.each do |user|
         if user.animal == nil or !dogs.include? user.animal
             user.animal = "happy"
