@@ -7,5 +7,10 @@ class User < ActiveRecord::Base
   has_many :groups
   has_many :reminders
   validates :name, presence: true
+  
+  def sendmail()
+      Pony.mail(:to => 'vincenttseng06@gmail.com', :from => 'vincenttseng06@gmail.com', :subject => 'hi', :body => 'bye')
+  end
+
 
 end
