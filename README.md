@@ -6,7 +6,7 @@ Title: Whimsical Reminders
 
 Team Members: Sydney McMuldroch, Kathy Jang, Vincent Min Tseng, Martha Morrissey
 
-Demo Link: tbd
+Demo Link: https://obscure-taiga-1842.herokuapp.com/
 
 Idea: An application where administrators monitor the group and sends birthday message and users are reminded of their friends birthdays/other important events. 
 
