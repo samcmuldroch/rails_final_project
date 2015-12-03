@@ -37,11 +37,11 @@ Features:
 	Users can sign up to be part of a group
 
 Division of Labor:
-	Sydney:
+	Sydney: Heuroko deplyment, model relationships, 
 	
-	Vincent: 
+	Vincent: Implemeted ActionMailer Gem, Implementation of Seeds and faker gem, sending email to an entire group
 	
-	Kathy: 
+	Kathy: Sign Up, HTML/CSS formatting, Displaying groups 
 	
-	Martha: Seeds, implemented join group, created a form for new reminders, helped with homepage format, modeling relationship 
+	Martha: methods for seeds, implemented join group, created a form for new reminders, helped with homepage format, modeling relationship 
 	between reminder and users and groups 
