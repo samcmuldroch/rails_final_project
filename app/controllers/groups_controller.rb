@@ -27,8 +27,21 @@ class GroupsController < ApplicationController
 #  		Pony.mail(:to => user.email, :from => 'samcmuldroch@berkeley.edu', :subject => 'Important email from' + @group.name, :body => 'body of email here')
 #  	end
 
+    dogs = {"fashionable" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5WW5leU11WjdZQmc/view?usp=sharing",
+            "sporty" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5bER3b0dfUFNqZFE/view?ths=true",
+            "happy" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5UUR4UlYyVnluWWM/view?usp=sharing",
+            "guilty" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5UnNyampKb29ydXc/view?usp=sharing",
+            "festive" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5M2RfRUhtWkF6OGc/view?usp=sharing",
+            "hungry" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5SUQ2VkF6bmx6Qzg/view?usp=sharing",
+            "thirst" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5UkFfVWxVMTRMVEE/view?usp=sharing",
+            "lazy" => "https://drive.google.com/a/berkeley.edu/file/d/0ByBCSV55jWH5dnVYNlhvQ0Ytb2s/view?usp=sharing"}
+
     @group.users.each do |user|
-        ActionMailer::Base.mail(from: "rubyfinalproject@gmail.com", to: user.email, subject: "Happy Birthday " + user.name + "!" + " Here's a picture of a " + user.animal + "!", body: ":D").deliver
+        if user.animal == nil or !dogs.include? user.animal
+            user.animal = "happy"
+            user.save
+        end
+        ActionMailer::Base.mail(from: "rubyfinalproject@gmail.com", to: user.email, subject: "Happy Birthday " + user.name + "!", body: "Here's a picture of a " + user.animal + "!" + "\n" + dogs[user.animal]).deliver
     end
     
     
