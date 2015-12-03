@@ -42,7 +42,7 @@ Division of Labor:
 
 	Sydney: Heuroko deployment, model relationships, initial email development, added data displays to various web pages, helped other debug
 	
-	Vincent: Implemeted ActionMailer Gem, Implementation of Seeds and faker gem, sending email to an entire group
+	Vincent: Implemeted ActionMailer Gem, Implementation of Seeds, implemented faker gem, sending email to an entire group, sending email after creation of reminder, user send mail method and encryption_password + reset_password_token
 	
 	Kathy: Sign Up and Log In, HTML/CSS formatting, Displaying groups 
 	
