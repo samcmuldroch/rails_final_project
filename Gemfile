@@ -4,6 +4,8 @@ group :development, :test do
     gem 'sqlite3'
 end
 
+gem 'actionmailer'
+
 gem 'pony'
 gem 'faker', '1.4.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

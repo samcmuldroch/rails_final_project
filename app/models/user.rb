@@ -9,7 +9,10 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   
   def sendmail()
-      Pony.mail(:to => 'vincenttseng06@gmail.com', :from => 'vincenttseng06@gmail.com', :subject => 'hi', :body => 'bye')
+#      Pony.mail :to => "vincenttseng06@gmail.com", :via =>:sendmail,
+#      :from => "mintseng@berkeley.edu", :subject => "hi",
+#      :headers => { 'Content-Type' => "text/plain" }, :body => "testing"
+    ActionMailer::Base.mail(from: "vincenttseng06@gmail.com", to: "vincenttseng06@gmail.com", subject: "Test", body: "Test").deliver
   end
 
 
