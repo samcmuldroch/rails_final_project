@@ -3,7 +3,6 @@
 <p><b>Users:</b> <% User.where(group_id: @group).each do |user| %>
 </p>
 User Name: <%= user.name %>
-Animal: <%= user.animal %>
 <br>
 <% end %>
 </p>
