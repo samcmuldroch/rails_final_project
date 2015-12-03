@@ -38,6 +38,14 @@ Features:
   - Admin can add users to groups
   - Users can sign up to be part of a group
 
+Gems(that weren't discussed in class):
+
+  - bootstrap-sass
+  - autoprefixer-rails
+  - web-console
+  - faker
+  - actionmailer
+
 Division of Labor:
 
 	Sydney: Heuroko deployment, model relationships, initial email development, added data displays to various web pages, helped other debug
