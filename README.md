@@ -26,15 +26,17 @@ Group
 	has many Users
 	has an Admin 
 	
-Admin 
-  has groups 
+Admin
+ 
+  - has groups 
   
 Features:
-	Users can create accounts and log in 
-	Users and admin can make reminders
-	Admin can make groups
-	Admin can add users to groups
-	Users can sign up to be part of a group
+	
+	- Users can create accounts and log in 
+	- Users and admin can make reminders
+	- Admin can make groups
+	- Admin can add users to groups
+	- Users can sign up to be part of a group
 
 Division of Labor:
 
