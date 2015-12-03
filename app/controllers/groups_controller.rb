@@ -42,7 +42,7 @@ class GroupsController < ApplicationController
             user.animal = "happy"
             user.save
         end
-        ActionMailer::Base.mail(from: "rubyfinalproject@gmail.com", to: user.email, subject: "Happy Birthday " + user.name + "!", body: "Here's a picture of a " + user.animal + "!" + "\n" + dogs[user.animal]).deliver
+        ActionMailer::Base.mail(from: "rubyfinalproject@gmail.com", to: user.email, subject: "Happy Birthday " + user.name + "!", body: "Here's a picture of a " + user.animal + " greyhound" + "!" + "\n" + dogs[user.animal]).deliver
     end
     
     
